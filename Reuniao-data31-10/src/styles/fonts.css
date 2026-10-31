@@ -1,0 +1,10 @@
+/*
+ * Fontes da identidade AEGON:
+ * - Manrope (títulos e marca aegon)
+ * - DM Sans (corpo de texto, tabelas e controles)
+ * Carregadas via Google Fonts no index.html com fallback local para Inter.
+ */
+@font-face { font-family: 'Qanelas'; font-weight: 400; font-display: swap; src: local('Manrope Regular'), local('Inter Regular'); }
+@font-face { font-family: 'Qanelas'; font-weight: 500; font-display: swap; src: local('Manrope Medium'), local('Inter Medium'); }
+@font-face { font-family: 'Qanelas'; font-weight: 600; font-display: swap; src: local('Manrope SemiBold'), local('Inter SemiBold'); }
+@font-face { font-family: 'Qanelas'; font-weight: 700; font-display: swap; src: local('Manrope Bold'), local('Inter Bold'); }

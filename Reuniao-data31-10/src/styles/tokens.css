@@ -1,0 +1,92 @@
+/*
+ * Design system: AEGON — Reunião Estratégica v3.
+ * Paleta oficial Aegon: Navy (#052c72), Blue (#063a96), Electric (#1250bf),
+ * Ink (#10203b), Paper (#f8f7f3), Sand (#e9e6de), Gold (#e5bd5a).
+ *
+ * Os tokens --ws-* e --c-* foram mapeados para a identidade visual da Aegon,
+ * mantendo compatibilidade total com todos os layouts, mockups e modo edição.
+ */
+:root {
+  /* AEGON v3 — paleta oficial */
+  --navy: #052c72;
+  --blue: #063a96;
+  --electric: #1250bf;
+  --ink: #10203b;
+  --paper: #f8f7f3;
+  --white: #ffffff;
+  --sand: #e9e6de;
+  --muted: #455573;
+  --stroke: #dedfe2;
+  --gold: #e5bd5a;
+
+  /* Mapeamento WorkSpace → Aegon */
+  --ws-chrome: #052c72;
+  --ws-primary: #063a96;
+  --ws-action: #1250bf;
+  --ws-canvas: #f8f7f3;
+  --ws-selection: #e8efff;
+  --ws-text: #10203b;
+  --ws-muted: #455573;
+  --ws-border: #dedfe2;
+  --ws-surface: #ffffff;
+  --ws-chrome-2: #0a388c; /* superfície elevada sobre o navy */
+  --ws-on-chrome-muted: #c8d8f4; /* texto secundário sobre fundo azul/navy */
+
+  /* Aliases usados pelos componentes */
+  --c-white: #ffffff;
+  --c-green-950: var(--ws-chrome);
+  --c-green-900: var(--ws-chrome);
+  --c-green-700: var(--ws-primary);
+  --c-green-600: var(--ws-action);
+  --c-lime: var(--ws-selection);
+  --c-teal: var(--ws-primary);
+  --c-blue: #1250bf;
+  --c-gold: #e5bd5a;
+  --c-yellow: #f8f0dc;
+
+  --c-paper: var(--ws-canvas);
+  --c-paper-edge: var(--sand);
+  --c-ink: var(--ws-text);
+  --c-ink-soft: var(--ws-muted);
+  --c-line: var(--ws-border);
+
+  /* Status — em badges e avisos */
+  --c-success: #063a96;
+  --c-success-tint: #e8efff;
+  --c-alert: #705d35;
+  --c-alert-tint: #f8f0dc;
+  --c-danger: #b91c1c;
+  --c-danger-tint: #fee2e2;
+  --c-info: #1250bf;
+  --c-info-tint: #edf2ff;
+  --c-returned: #052c72;
+  --c-returned-tint: #dceaff;
+
+  /* Mockups = mesmos tokens Aegon */
+  --bws-chrome: var(--ws-chrome);
+  --bws-primary: var(--ws-primary);
+  --bws-action: var(--ws-action);
+  --bws-canvas: var(--ws-canvas);
+  --bws-text: var(--ws-text);
+  --bws-muted: var(--ws-muted);
+  --bws-border: var(--ws-border);
+  --bws-selection: var(--ws-selection);
+
+  /* Tipografia Aegon: Manrope (títulos) + DM Sans (corpo) */
+  --font-brand: 'Manrope', 'DM Sans', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-body: 'DM Sans', 'Inter', system-ui, -apple-system, sans-serif;
+  --fs-display: 116px;
+  --fs-title: 64px;
+  --fs-subtitle: 36px;
+  --fs-body: 28px;
+  --fs-label: 22px;
+  --fs-caption: 20px;
+
+  /* Forma: cantos suaves característicos da Aegon */
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 10px;
+  --shadow-card: 0 0 0 1px var(--ws-border), 0 12px 36px rgba(5, 30, 80, 0.08);
+  --shadow-device: 0 28px 70px rgba(0, 22, 65, 0.45);
+  --shadow-pop: 0 14px 36px rgba(5, 30, 80, 0.16);
+}

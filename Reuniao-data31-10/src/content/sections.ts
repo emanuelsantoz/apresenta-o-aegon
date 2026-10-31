@@ -1,0 +1,10 @@
+export const S_ABERTURA = 'Abertura · Estratégia em Movimento';
+export const S_RETOMADA = '01 · Pessoas e Direção';
+export const S_POSICIONAMENTO = '02 · Posicionamento e Modelo de Negócio';
+export const S_PROJETOS = '03 · Inovação com Propósito';
+export const S_PRIORIZACAO = '04 · Critérios e Priorização';
+export const S_IDENTIDADE = '05 · Marca e Presença';
+export const S_PARCERIAS = '06 · Parcerias e Eventos';
+export const S_OPERACAO = '07 · Operação entre Sócios';
+export const S_PLANO = '08 · Plano de Ação 30 Dias';
+export const S_ENCERRAMENTO = 'Encerramento · Próximo Ciclo';

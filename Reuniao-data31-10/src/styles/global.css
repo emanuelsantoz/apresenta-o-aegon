@@ -1,0 +1,40 @@
+@import '@fontsource/inter/latin-400.css';
+@import '@fontsource/inter/latin-500.css';
+@import '@fontsource/inter/latin-600.css';
+@import '@fontsource/inter/latin-700.css';
+@import '@fontsource/inter/latin-ext-400.css';
+@import '@fontsource/inter/latin-ext-600.css';
+@import '@fontsource/inter/latin-ext-700.css';
+@import './tokens.css';
+@import './fonts.css';
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body, #root { margin: 0; height: 100%; overflow: hidden; }
+body {
+  background: #041e4e;
+  color: var(--c-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 {
+  font-family: var(--font-brand);
+}
+body.print-mode, body.print-mode #root, html.print-mode { overflow: visible; height: auto; background: #fff; }
+button, input, select, textarea { font: inherit; color: inherit; }
+.num { font-variant-numeric: tabular-nums; }
+::selection { background: #d9e5ff; color: #001f68; }
+
+/* modo edição */
+[data-editor-ui] button:disabled { opacity: 0.4; cursor: default; }
+[contenteditable]:not([contenteditable="false"]) { outline: none; caret-color: #1250BF; cursor: text; }
+body[data-mode="edicao"] [data-card-text]:empty::before { content: 'Digite o texto'; opacity: 0.45; }
+body[data-mode="edicao"] [data-new-card] { cursor: move; }
+body[data-mode="edicao"] [data-movable] { pointer-events: auto; cursor: move; }
+body[data-mode="edicao"] [data-card-text] { cursor: text; }
+.spin { animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+@page { size: 1920px 1080px; margin: 0; }
+@media print {
+  .no-print { display: none !important; }
+}
